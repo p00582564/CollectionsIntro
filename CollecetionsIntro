@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class CollectionsIntro {
+	public static void main (String [] args) {
+		String [] things = {"cars", "lasers", "hats", "planes"};
+		List<String> list1 = new ArrayList<String>();
+		
+		// array items to list
+		for (String x: things) {
+			list1.add(x);
+		}
+		
+		String [] moreThings = {"lasers", "hats"};
+		List<String> list2 = new ArrayList<String>();
+		// array items to list
+		for (String y: moreThings) {
+			list2.add(y);
+		}
+		
+		for(int i = 0; i <list2.size(); i++) {
+			System.out.printf("%s ", list1.get(i) );
+		}
+    
+    
+    // the program created a list and filtered out two of items on said list. 
+    //Still attempting to use objects in collections and lists.
+	}
+}
